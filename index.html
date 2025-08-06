@@ -1,12 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberArsenalHub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CyberArsenalHub — Cybersecurity Awareness & Training</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Analytics: replace MEASUREMENT_ID with your GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'MEASUREMENT_ID');
+  </script>
+
 </head>
 <body>
-    <h1>Welcome to CyberArsenalHub</h1>
-    <p>Cybersecurity services with Arsenal-themed branding.</p>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <img src="assets/cyberarsenal-logo.png" alt="Arsenal logo placeholder" class="logo">
+        <div>
+          <h1>CyberArsenalHub</h1>
+          <p class="tagline">Cybersecurity awareness & training for Oshawa small businesses</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Protect your business from phishing, ransomware, and AI scams</h2>
+        <p>Local, practical cybersecurity training that your team will actually understand — delivered by Dami Faromika in Oshawa & Durham Region.</p>
+        <a class="cta" href="#contact">Book a free Lunch & Learn</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>Our Services</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>On-site Workshops</h4>
+          <p>Interactive sessions covering phishing, password hygiene, and incident response basics.</p>
+        </div>
+        <div class="card">
+          <h4>Phishing Simulations</h4>
+          <p>Monthly simulated attacks with clear reporting and action plans.</p>
+        </div>
+        <div class="card">
+          <h4>AI Scam Awareness</h4>
+          <p>Learn to identify voice and video deepfakes and protect your finances & reputation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>I'm <strong>Dami Faromika</strong>, founder of CyberArsenalHub. I deliver no-jargon cybersecurity awareness training tailored for small businesses and teams in Oshawa and the Durham Region.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p><strong>Phone:</strong> 902-940-6038</p>
+      <p><strong>Email:</strong> <a href="mailto:olfaromika@upeialum.ca">olfaromika@upeialum.ca</a></p>
+      <p>Interested in a free Lunch & Learn? Email or call to schedule — or use the form below.</p>
+      <!-- To connect email: replace FORM_ENDPOINT with your Formspree or Formcarry endpoint. -->
+    
+      <div class="calendly-embed">
+        <h4>Or schedule a free Lunch & Learn</h4>
+        <p>Use this Calendly link (replace with your actual Calendly URL):</p>
+        <p><a href="https://calendly.com/your-username/free-lunch-learn" target="_blank" rel="noopener">Schedule on Calendly</a></p>
+        <!-- If you want to embed Calendly widget directly, replace the href with your Calendly link and paste the widget script in the footer. -->
+      </div>
+
+      <form class="contact-form" action="FORM_ENDPOINT" method="POST">
+
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="company" placeholder="Company (optional)">
+        <textarea name="message" placeholder="Message" rows="4"></textarea>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 CyberArsenalHub — All rights reserved.</p>
+      <p class="disclaimer">Note: The Arsenal logo shown is a <strong>placeholder</strong>. Use of the official Arsenal logo requires permission from the trademark holder.</p>
+          <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms & Conditions</a></p>
+    </div>
+  </footer>
 </body>
 </html>

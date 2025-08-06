@@ -1,0 +1,42 @@
+/* Simple, clean styles for CyberArsenalHub */
+:root{
+  --bg: #0f1724;
+  --accent: #0066cc;
+  --accent-2: #b30000; /* subtle Arsenal red as accent */
+  --card-bg: #ffffff;
+  --text: #17202a;
+}
+
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:var(--text);background:linear-gradient(180deg,#f6f8fb,#eef4fb);}
+.container{max-width:1000px;margin:0 auto;padding:20px;}
+.site-header{background:#ffffff;border-bottom:1px solid #e6eef9;}
+.brand{display:flex;align-items:center;gap:12px;padding:12px 0;}
+.logo{width:64px;height:64px;}
+.brand h1{margin:0;font-size:20px;color:var(--bg);}
+.tagline{margin:0;font-size:13px;color:#586a7b;}
+.nav{margin-left:auto;display:flex;gap:16px;align-items:center;}
+.nav a{color:#2b3948;text-decoration:none;font-weight:600;font-size:14px;}
+
+.hero{padding:40px 0;background:linear-gradient(90deg, rgba(0,102,204,0.08), rgba(179,0,0,0.04));border-radius:8px;margin-top:12px;}
+.hero h2{margin:0 0 12px 0;font-size:24px;color:var(--bg);}
+.hero p{margin:0 0 16px;color:#3b4b59;}
+.cta{background:var(--accent);color:white;padding:10px 16px;border-radius:6px;text-decoration:none;font-weight:700;}
+
+.services{margin-top:24px;}
+.cards{display:flex;gap:16px;flex-wrap:wrap;}
+.card{background:var(--card-bg);padding:16px;border-radius:8px;box-shadow:0 2px 6px rgba(11,20,34,0.06);flex:1;min-width:240px;}
+.card h4{margin-top:0;color:var(--bg);}
+
+.about, .contact{margin-top:24px;background:white;padding:16px;border-radius:8px;}
+
+.contact-form{display:flex;flex-direction:column;gap:8px;max-width:480px;}
+.contact-form input, .contact-form textarea{padding:10px;border:1px solid #d6e0ea;border-radius:6px;}
+.contact-form button{background:var(--accent-2);color:white;padding:10px;border:none;border-radius:6px;font-weight:700;cursor:pointer;}
+
+.site-footer{padding:12px 0;text-align:center;font-size:13px;color:#5a6a79;margin-top:24px;}
+.disclaimer{font-size:12px;color:#8b97a6;margin-top:8px;}
+@media(max-width:700px){
+  .cards{flex-direction:column;}
+  .nav{display:none;}
+}
